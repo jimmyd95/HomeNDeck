@@ -56,32 +56,35 @@
     <Analyzer Include="D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRButtonAxis1D.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\SetDisplayRefresh.cs" />
-    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\AnimatedHandOVR.cs" />
+    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\HandSkeletonOVR.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRSkeletonData.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\FromOVRControllerDataSource.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\FromOVRHandDataSource.cs" />
-    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRButton.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRInputDeviceActiveState.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRNearTouch.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRTouch.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\UnityCanvas\OVRCanvasMeshRenderer.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRControllerVisual.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\FromOVRHmdDataSource.cs" />
-    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\HandSkeletonOVR.cs" />
-    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRControllerUtility.cs" />
-    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRCameraRigRef.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRAxis1D.cs" />
-    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\UnityCanvas\OVRRenderingMode.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRAxis2D.cs" />
-    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRControllerMatchesProfileActiveState.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\FromOVRControllerHandDataSource.cs" />
+    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\AnimatedHandOVR.cs" />
+    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRButton.cs" />
+    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRControllerUtility.cs" />
+    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\UnityCanvas\OVRRenderingMode.cs" />
+    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRControllerMatchesProfileActiveState.cs" />
+    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRButtonAxis1D.cs" />
+    <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\OVRCameraRigRef.cs" />
     <Compile Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\TrackingToWorldTransformerOVR.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Oculus.Interaction.OVR.asmdef" />
+    <None Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Prefabs\HandGrab\placeholder.txt" />
+    <None Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\Input\placeholder.txt" />
     <None Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Prefabs\Legacy\legacy.txt" />
+    <None Include="Assets\Oculus\Interaction\OVRIntegration\Runtime\Scripts\UnityCanvas\placeholder.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
