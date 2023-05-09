@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class FurnitureManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private List<GameObject> furniture;
+    [SerializeField] private Vector3 summoningSpot;
+
+    public void SetFurniture(int index)
+    {
+        Instantiate(furniture[index], summoningSpot, Quaternion.identity);
+    }
+
+    public void DestroyFurniture(Collider other)
+    {
+        if (other.CompareTag("Item"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
     {
-        
+        foreach (var item in furniture)
+        {
+            if (item)
+                Destroy(item);
+        }
     }
 }
