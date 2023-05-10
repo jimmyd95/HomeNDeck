@@ -1,15 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class FurnitureManager : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> furniture;
-    [SerializeField] private Vector3 summoningSpot;
+    [SerializeField] private TMP_Text furnitureName;
+    [SerializeField] private List<GameObject> furniture; // list of furnitures to instantiate
+    [SerializeField] private GameObject summoningSpot; // the transform position of the instant
 
-    public void SetFurniture(int index)
+    [SerializeField] private GameObject trashCan;
+
+    private int furnitureNum = 0; // when clicking left and right, you choose the furniture items
+    private bool summonTrashCan = false; // set a bool so I can summon and destroy the trashcan
+
+    private void Update()
     {
-        Instantiate(furniture[index], summoningSpot, Quaternion.identity);
+        furnitureName.text = furniture[furnitureNum].name;
+    }
+
+    public void SetFurniture()
+    {
+        Instantiate(furniture[furnitureNum], summoningSpot.transform.position, Quaternion.identity);
     }
 
     public void DestroyFurniture(Collider other)
@@ -20,9 +32,28 @@ public class FurnitureManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void MinusNumber()
     {
-        
+        if (furnitureNum > 0)
+            furnitureNum -= 1;
+    }
+    
+    public void PlusNumber()
+    {
+        if (furnitureNum < furniture.Count)
+            furnitureNum += 1;
+    }
+
+    public void SummonTrashCan()
+    {
+        if (summonTrashCan)
+        {
+            Instantiate(trashCan, summoningSpot.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Destroy(trashCan);
+        }
     }
 
     private void OnDestroy()
