@@ -139,8 +139,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 1383155817}
+  _twoGrabTransformer: {fileID: 1383155816}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
 --- !u!114 &1383155811
@@ -302,6 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4189197956154484086}
   - component: {fileID: 4189197956154484081}
+  - component: {fileID: 8046419618190193382}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -337,3 +338,15 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.00135
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8046419618190193382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4189197956154484087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a1a7f24ac72a41b41a46d1b4f37a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
