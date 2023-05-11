@@ -274,8 +274,8 @@ MonoBehaviour:
   _constraints:
     ConstraintsAreRelative: 0
     MinScale:
-      Constrain: 0
-      Value: 0
+      Constrain: 1
+      Value: 1
     MaxScale:
-      Constrain: 0
-      Value: 0
+      Constrain: 1
+      Value: 4

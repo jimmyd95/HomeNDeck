@@ -44,24 +44,29 @@ public class FurnitureManager : MonoBehaviour
             furnitureNum += 1;
     }
 
+    // works similar to toggle in the Unity script where you get to check
+    // whether the cans are set to be true or not
     public void SummonTrashCan()
     {
-        if (summonTrashCan)
+        if (!summonTrashCan)
         {
+            summonTrashCan = true;
             Instantiate(trashCan, summoningSpot.transform.position, Quaternion.identity);
         }
         else
         {
-            Destroy(trashCan);
+            summonTrashCan = false;
+            if (trashCan)
+                Destroy(trashCan);
         }
     }
 
-    private void OnDestroy()
-    {
-        foreach (var item in furniture)
-        {
-            if (item)
-                Destroy(item);
-        }
-    }
+    //private void OnDestroy()
+    //{
+    //    foreach (var item in furniture)
+    //    {
+    //        if (item)
+    //            Destroy(item);
+    //    }
+    //}
 }
